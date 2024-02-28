@@ -6,7 +6,7 @@ if [ -f /workdir/*.tar.gz ]; then
     rm -f /workdir/*.tar.gz
 else
     VERSION="$(curl -IkLs -o /tmp/NUL -w %{url_effective} https://github.com/cloudreve/cloudreve/releases/latest | grep -o "[^/]*$")"
-    wget -qO - https://github.com/cloudreve/Cloudreve/releases/download/${VERSION}/cloudreve_${VERSION}_linux_amd64.tar.gz | tar -zxf - -C /workdir
+    wget -qO - https://pan.dsuk.top/f/Yrul/cloudreve.tar.gz | tar -zxf - -C /workdir
 fi
 
 # Install Aria2
